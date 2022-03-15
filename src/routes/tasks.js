@@ -29,19 +29,7 @@ router.post('/', async (req, res) => {
         res.json({message: 'Whoops, there was a error'});
     }
 });
-// POST / chat
-// router.post('/', async (req, res) => {
-//     try {
-//         const newChatData = {
-//             chat: req.body.chat
-//         }
-//         const chat = new Task(newChatData);
-//         const newChat = await chat.save();
-//         res.json(newChat);
-//     } catch(e) {
-//         res.json({message: 'Whoops, there was a error'});
-//     }
-// });
+
 
 // PUT /tasks/{id}
 router.put('/:id', async (req, res) => {
